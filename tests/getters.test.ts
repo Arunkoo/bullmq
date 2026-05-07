@@ -60,7 +60,7 @@ describe('Jobs getters', () => {
 
       await queueEvent.close();
       await queueEvent2.close();
-    }); // TODO: Add { timeout: 8000 } to the it() options
+    }, 8000);
   });
 
   describe('.getWorkers', () => {
